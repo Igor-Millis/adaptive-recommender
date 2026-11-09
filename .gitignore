@@ -1,0 +1,25 @@
+# ambiente
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+
+# gerado localmente (recriado por run.bat / run.sh)
+logs/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/synthetic/*
+!data/synthetic/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+models/trained/*
+!models/trained/.gitkeep
+models/metadata/*
+!models/metadata/.gitkeep
+models/.retraining.lock
+
+# dataset público baixado por scripts/download_real_data.py (não redistribuído)
+data/raw/*
+!data/raw/.gitkeep
